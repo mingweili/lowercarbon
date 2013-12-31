@@ -1,0 +1,6 @@
+D:\WeRun Club\Lower Carbon\LowerCarbon\DBOperation\bin\Debug\ImageCupDB.dll.config
+D:\WeRun Club\Lower Carbon\LowerCarbon\DBOperation\bin\Debug\ImageCupDB.dll
+D:\WeRun Club\Lower Carbon\LowerCarbon\DBOperation\bin\Debug\ImageCupDB.pdb
+D:\WeRun Club\Lower Carbon\LowerCarbon\DBOperation\obj\Debug\ResolveAssemblyReference.cache
+D:\WeRun Club\Lower Carbon\LowerCarbon\DBOperation\obj\Debug\ImageCupDB.dll
+D:\WeRun Club\Lower Carbon\LowerCarbon\DBOperation\obj\Debug\ImageCupDB.pdb

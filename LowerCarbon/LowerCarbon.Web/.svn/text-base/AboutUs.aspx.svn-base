@@ -1,0 +1,7 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Mother.Master" AutoEventWireup="true" CodeBehind="AboutUs.aspx.cs" Inherits="LowerCarbon.AboutUs" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <asp:Image ID="aboutUsimg" runat="server" Height="256px" ImageAlign="Middle" 
+        ImageUrl="~/images/aboutusimg.png" Width="466px" />
+</asp:Content>

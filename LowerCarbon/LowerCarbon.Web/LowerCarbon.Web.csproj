@@ -1,0 +1,350 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C8F69DF1-3797-46EE-8559-BEAF191794B2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LowerCarbon.Web</RootNamespace>
+    <AssemblyName>LowerCarbon.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.0.30512.20315, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="TopSdk, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\TopSdk.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AboutUs.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="Achievements.aspx" />
+    <Content Include="CarbonCalculator.aspx" />
+    <Content Include="Feedback.aspx" />
+    <Content Include="fund.aspx" />
+    <Content Include="ImageHandler.ashx" />
+    <Content Include="ClientBin\LowerCarbon.Web.Controls.xap" />
+    <Content Include="css\content-module.css" />
+    <Content Include="css\date.css" />
+    <Content Include="css\datepicker.css" />
+    <Content Include="css\defaults.css" />
+    <Content Include="css\fieldgroup.css" />
+    <Content Include="css\filefield.css" />
+    <Content Include="css\jquery.css" />
+    <Content Include="css\jquery.timeentry.css" />
+    <Content Include="css\login.css" />
+    <Content Include="css\node.css" />
+    <Content Include="css\print.css" />
+    <Content Include="css\register.css" />
+    <Content Include="css\reset.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\system-menus.css" />
+    <Content Include="css\system.css" />
+    <Content Include="css\user.css" />
+    <Content Include="css\views.css" />
+    <Content Include="Images\1.gif" />
+    <Content Include="Images\132.gif" />
+    <Content Include="Images\192.gif" />
+    <Content Include="Images\1_Carousel_TheLabel_0.png" />
+    <Content Include="Images\2_Carousel_CarbonTrust_3.png" />
+    <Content Include="Images\3_Carousel_Celebrities_2.png" />
+    <Content Include="Images\4_Carousel_Start_1.png" />
+    <Content Include="Images\515.jpg" />
+    <Content Include="Images\516.jpg" />
+    <Content Include="Images\5_Carousel_Lighten-your-step_1.png" />
+    <Content Include="Images\a.gif" />
+    <Content Include="Images\aboutusimg.png" />
+    <Content Include="Images\bg.jpg" />
+    <Content Include="Images\btbg.png" />
+    <Content Include="Images\btn_ljzc.gif" />
+    <Content Include="Images\cloud.png" />
+    <Content Include="Images\contrast_bw.gif" />
+    <Content Include="Images\CTFC_logo.gif" />
+    <Content Include="Images\dash_line.png" />
+    <Content Include="Images\erbg.png" />
+    <Content Include="Images\footbt.png" />
+    <Content Include="Images\footer_carbontrust.gif" />
+    <Content Include="Images\ftbg.png" />
+    <Content Include="Images\gbodybg.png" />
+    <Content Include="Images\guidebg.jpg" />
+    <Content Include="Images\guidembg_714beta.gif" />
+    <Content Include="Images\linedot1.gif" />
+    <Content Include="Images\mentip.png" />
+    <Content Include="Images\no.png" />
+    <Content Include="Images\rbtn.gif" />
+    <Content Include="Images\rloginbtn.gif" />
+    <Content Include="Images\textbg.png" />
+    <Content Include="Images\tipicon.png" />
+    <Content Include="Images\toptip1.png" />
+    <Content Include="Images\transparent.gif" />
+    <Content Include="Login1.aspx" />
+    <Content Include="Login2.aspx" />
+    <Content Include="LoginUserCarbonCalculatorService.svc" />
+    <Content Include="Logout.aspx" />
+    <Content Include="LoveTree.aspx" />
+    <Content Include="Personal.aspx" />
+    <Content Include="PurchasesHistory.aspx" />
+    <Content Include="Rank.aspx" />
+    <Content Include="Register.aspx" />
+    <Content Include="Scripts\Register.js" />
+    <Content Include="Styles\LoginPageStyle.css" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutUs.aspx.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AboutUs.aspx.designer.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Achievements.aspx.cs">
+      <DependentUpon>Achievements.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Achievements.aspx.designer.cs">
+      <DependentUpon>Achievements.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CarbonCalculator.aspx.cs">
+      <DependentUpon>CarbonCalculator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CarbonCalculator.aspx.designer.cs">
+      <DependentUpon>CarbonCalculator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Feedback.aspx.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Feedback.aspx.designer.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="fund.aspx.cs">
+      <DependentUpon>fund.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="fund.aspx.designer.cs">
+      <DependentUpon>fund.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="ImageHandler.ashx.cs">
+      <DependentUpon>ImageHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Login1.aspx.cs">
+      <DependentUpon>Login1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login1.aspx.designer.cs">
+      <DependentUpon>Login1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login2.aspx.cs">
+      <DependentUpon>Login2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login2.aspx.designer.cs">
+      <DependentUpon>Login2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoginUserCarbonCalculatorService.svc.cs">
+      <DependentUpon>LoginUserCarbonCalculatorService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoveTree.aspx.cs">
+      <DependentUpon>LoveTree.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoveTree.aspx.designer.cs">
+      <DependentUpon>LoveTree.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mother.Master.cs">
+      <DependentUpon>Mother.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mother.Master.designer.cs">
+      <DependentUpon>Mother.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Personal.aspx.cs">
+      <DependentUpon>Personal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Personal.aspx.designer.cs">
+      <DependentUpon>Personal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PurchasesHistory.aspx.cs">
+      <DependentUpon>PurchasesHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PurchasesHistory.aspx.designer.cs">
+      <DependentUpon>PurchasesHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Rank.aspx.cs">
+      <DependentUpon>Rank.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Rank.aspx.designer.cs">
+      <DependentUpon>Rank.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="topServices.asmx.cs">
+      <DependentUpon>topServices.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LowerCarbon.Data\LowerCarbon.Data.csproj">
+      <Project>{377C288D-7B3F-45DA-A98B-84609FBE6D75}</Project>
+      <Name>LowerCarbon.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LowerCarbon.Data\LowerCarbon.Data.csproj">
+      <Project>{377C288D-7B3F-45DA-A98B-84609FBE6D75}</Project>
+      <Name>LowerCarbon.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LowerCarbon.DBOp\LowerCarbon.DBOp.csproj">
+      <Project>{3523E354-B36B-4E1C-A741-327A1F65D441}</Project>
+      <Name>LowerCarbon.DBOp</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Mother.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="topServices.asmx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>4032</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

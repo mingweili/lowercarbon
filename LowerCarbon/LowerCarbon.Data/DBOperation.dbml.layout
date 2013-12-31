@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 14.125" name="ImagineCupDB">
+  <DataContextMoniker Name="/ImagineCupDBDataContext" />
+  <nestedChildShapes>
+    <classShape Id="3882ef89-c854-47a5-9a40-cb327d39b9b7" absoluteBounds="0.625, 4.125, 2, 1.3805261230468751">
+      <DataClassMoniker Name="/ImagineCupDBDataContext/AVG_CAR_FOO_OF_STATE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ba816986-4111-4434-8379-8dc884e3606a" absoluteBounds="0.64000000000000012, 4.585, 1.9700000000000002, 0.820526123046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="63fe6035-db16-408e-bbe2-bbf6bb0c9908" absoluteBounds="0.5, 1.75, 2, 1.7625655110677081">
+      <DataClassMoniker Name="/ImagineCupDBDataContext/CARBON_FOO_CONF" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ea38efae-1d4d-4765-946a-d8bfa23c3ccb" absoluteBounds="0.51500000000000012, 2.21, 1.9700000000000002, 1.2025655110677083" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="251cbf41-6e27-4659-9c39-866c2d523f0a" absoluteBounds="0.5, 6.25, 2.125, 7.6841760253906255">
+      <DataClassMoniker Name="/ImagineCupDBDataContext/CARBON_FOOTPRINT" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5781b719-d08e-401d-b3f7-f836956ceed9" absoluteBounds="0.515, 6.71, 2.0949999999999998, 7.124176025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="46adb695-2731-4953-a480-e5d4c0e6bd95" absoluteBounds="5.25, 3.75, 2, 2.3356245930989576">
+      <DataClassMoniker Name="/ImagineCupDBDataContext/CONSUMER" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ded4208e-ef49-4e9f-a845-6d0ee752cc4c" absoluteBounds="5.265, 4.21, 1.9700000000000002, 1.7756245930989583" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.25 : 5.73131551106771); (0.53125 : 5.73131551106771); (0.53125 : 6.25)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/ImagineCupDBDataContext/CONSUMER/CONSUMER_CARBON_FOOTPRINT" />
+      <nodes>
+        <classShapeMoniker Id="46adb695-2731-4953-a480-e5d4c0e6bd95" />
+        <classShapeMoniker Id="251cbf41-6e27-4659-9c39-866c2d523f0a" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="e31ae45f-5fd4-46cd-abd4-7d493600a4e0" absoluteBounds="3.25, 1.875, 2, 1.7625655110677081">
+      <DataClassMoniker Name="/ImagineCupDBDataContext/CONSUMER_BIND_ESHOP" />
+      <nestedChildShapes>
+        <elementListCompartment Id="023e7c3e-705e-49df-acba-e7ffedfa4491" absoluteBounds="3.2650000000000006, 2.335, 1.9700000000000002, 1.2025655110677083" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6.25471764625007 : 3.75); (6.25471764625007 : 2.75628275553385); (5.25 : 2.75628275553385)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/ImagineCupDBDataContext/CONSUMER/CONSUMER_CONSUMER_BIND_ESHOP" />
+      <nodes>
+        <classShapeMoniker Id="46adb695-2731-4953-a480-e5d4c0e6bd95" />
+        <classShapeMoniker Id="e31ae45f-5fd4-46cd-abd4-7d493600a4e0" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="b20c94d6-113b-4f61-8635-daad0f47a220" absoluteBounds="2.75, 6.75, 2, 1.3805261230468751">
+      <DataClassMoniker Name="/ImagineCupDBDataContext/E_SHOP" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d8313d7e-4a2c-46e8-ba45-482c4c5ae5b9" absoluteBounds="2.765, 7.21, 1.9700000000000002, 0.820526123046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4 : 6.75); (4 : 3.63756551106771)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/ImagineCupDBDataContext/E_SHOP/E_SHOP_CONSUMER_BIND_ESHOP" />
+      <nodes>
+        <classShapeMoniker Id="b20c94d6-113b-4f61-8635-daad0f47a220" />
+        <classShapeMoniker Id="e31ae45f-5fd4-46cd-abd4-7d493600a4e0" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="1711e154-ddec-4dc8-b00f-9290188e131e" absoluteBounds="7.5, 1.75, 2, 2.5266442871093751">
+      <DataClassMoniker Name="/ImagineCupDBDataContext/LOVE_TREE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="30c14671-f6e8-4f5e-aac3-a627bbf94c11" absoluteBounds="7.5150000000000006, 2.21, 1.9700000000000002, 1.966644287109375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(7.25 : 4.01332214355469); (7.5 : 4.01332214355469)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/ImagineCupDBDataContext/CONSUMER/CONSUMER_LOVE_TREE" />
+      <nodes>
+        <classShapeMoniker Id="46adb695-2731-4953-a480-e5d4c0e6bd95" />
+        <classShapeMoniker Id="1711e154-ddec-4dc8-b00f-9290188e131e" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="f8a030cf-3b25-437f-a3d8-cb642369b6ce" absoluteBounds="5.25, 7.5, 2, 1.9535852050781251">
+      <DataClassMoniker Name="/ImagineCupDBDataContext/PLATFORM_LOG" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8c7e3892-8142-4a39-b72c-bdf638b1843e" absoluteBounds="5.2650000000000006, 7.9600000000000009, 1.9700000000000002, 1.393585205078125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7ef36a41-379b-4c85-9038-c7a002393b8c" absoluteBounds="7.875, 6.375, 2, 2.5266442871093751">
+      <DataClassMoniker Name="/ImagineCupDBDataContext/PURCHASES_HISTORY" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9e7b0091-0f7c-4a81-84c3-cd00c25487cb" absoluteBounds="7.8900000000000006, 6.8350000000000009, 1.9700000000000002, 1.966644287109375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(7.25 : 5.21238444010417); (9.71875 : 5.21238444010417); (9.71875 : 6.375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/ImagineCupDBDataContext/CONSUMER/CONSUMER_PURCHASES_HISTORY" />
+      <nodes>
+        <classShapeMoniker Id="46adb695-2731-4953-a480-e5d4c0e6bd95" />
+        <classShapeMoniker Id="7ef36a41-379b-4c85-9038-c7a002393b8c" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="c7719b90-9aa0-4038-af69-71a14d58c04d" absoluteBounds="8, 10.25, 2, 2.1446048990885416">
+      <DataClassMoniker Name="/ImagineCupDBDataContext/GOODS" />
+      <nestedChildShapes>
+        <elementListCompartment Id="52a6350c-5fa4-43a8-a82d-4bb7bdee14d0" absoluteBounds="8.015, 10.71, 1.9700000000000002, 1.5846048990885415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="be9ef792-2d7d-4f55-9343-634c80743fe4" absoluteBounds="5.5, 11.25, 2, 2.1446048990885416">
+      <DataClassMoniker Name="/ImagineCupDBDataContext/VENDOR" />
+      <nestedChildShapes>
+        <elementListCompartment Id="82945a07-724a-450e-8ed5-dce290d9000e" absoluteBounds="5.515, 11.71, 1.9700000000000002, 1.5846048990885415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3b076968-83ce-4cb5-999e-a2450c48d72f" absoluteBounds="3, 10.125, 2, 2.3356245930989585">
+      <DataClassMoniker Name="/ImagineCupDBDataContext/VENDOR_BIND_ESHOP_" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f65c4f4f-fbbc-4954-b743-e9a06ad5a0e2" absoluteBounds="3.0149999999999997, 10.585, 1.9700000000000002, 1.7756245930989585" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5 : 10.71875); (8 : 10.71875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/ImagineCupDBDataContext/VENDOR_BIND_ESHOP_/VENDOR_BIND_ESHOP__GOODS" />
+      <nodes>
+        <classShapeMoniker Id="3b076968-83ce-4cb5-999e-a2450c48d72f" />
+        <classShapeMoniker Id="c7719b90-9aa0-4038-af69-71a14d58c04d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 11.8553122965495); (5 : 11.8553122965495)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/ImagineCupDBDataContext/VENDOR/VENDOR_VENDOR_BIND_ESHOP_" />
+      <nodes>
+        <classShapeMoniker Id="be9ef792-2d7d-4f55-9343-634c80743fe4" />
+        <classShapeMoniker Id="3b076968-83ce-4cb5-999e-a2450c48d72f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.875 : 8.13052612304688); (3.875 : 10.125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/ImagineCupDBDataContext/E_SHOP/E_SHOP_VENDOR_BIND_ESHOP_" />
+      <nodes>
+        <classShapeMoniker Id="b20c94d6-113b-4f61-8635-daad0f47a220" />
+        <classShapeMoniker Id="3b076968-83ce-4cb5-999e-a2450c48d72f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.96875 : 10.25); (9.96875 : 9.20886474609375); (9.02083333333333 : 9.20886474609375 : JumpStart); (8.85416666666667 : 9.20886474609375 : JumpEnd); (7.25 : 9.20886474609375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/ImagineCupDBDataContext/GOODS/GOODS_PLATFORM_LOG" />
+      <nodes>
+        <classShapeMoniker Id="c7719b90-9aa0-4038-af69-71a14d58c04d" />
+        <classShapeMoniker Id="f8a030cf-3b25-437f-a3d8-cb642369b6ce" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.9375 : 10.25); (8.9375 : 8.90164428710938)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/ImagineCupDBDataContext/GOODS/GOODS_PURCHASES_HISTORY" />
+      <nodes>
+        <classShapeMoniker Id="c7719b90-9aa0-4038-af69-71a14d58c04d" />
+        <classShapeMoniker Id="7ef36a41-379b-4c85-9038-c7a002393b8c" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

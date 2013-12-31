@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LowerCarbon.Data", "LowerCarbon.Data\LowerCarbon.Data.csproj", "{377C288D-7B3F-45DA-A98B-84609FBE6D75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LowerCarbon.DBOp", "LowerCarbon.DBOp\LowerCarbon.DBOp.csproj", "{3523E354-B36B-4E1C-A741-327A1F65D441}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LowerCarbon.Web", "LowerCarbon.Web\LowerCarbon.Web.csproj", "{C8F69DF1-3797-46EE-8559-BEAF191794B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LowerCarbon.Web.Test", "LowerCarbon.Test\LowerCarbon.Web.Test.csproj", "{E764434A-3388-4CF2-97A6-CD530D0B5DA0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1FAA5BC5-999B-4142-9DC8-FCBF492BD240}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+		LowerCarbon.vsmdi = LowerCarbon.vsmdi
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LowerCarbon.Web.Controls", "LowerCarbon.Web.Controls\LowerCarbon.Web.Controls.csproj", "{33692357-5346-4FF0-9E64-F5DF823A0CE8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C8F69DF1-3797-46EE-8559-BEAF191794B2} = {C8F69DF1-3797-46EE-8559-BEAF191794B2}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = LowerCarbon.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{377C288D-7B3F-45DA-A98B-84609FBE6D75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{377C288D-7B3F-45DA-A98B-84609FBE6D75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{377C288D-7B3F-45DA-A98B-84609FBE6D75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{377C288D-7B3F-45DA-A98B-84609FBE6D75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3523E354-B36B-4E1C-A741-327A1F65D441}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3523E354-B36B-4E1C-A741-327A1F65D441}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3523E354-B36B-4E1C-A741-327A1F65D441}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3523E354-B36B-4E1C-A741-327A1F65D441}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8F69DF1-3797-46EE-8559-BEAF191794B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8F69DF1-3797-46EE-8559-BEAF191794B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8F69DF1-3797-46EE-8559-BEAF191794B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8F69DF1-3797-46EE-8559-BEAF191794B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E764434A-3388-4CF2-97A6-CD530D0B5DA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E764434A-3388-4CF2-97A6-CD530D0B5DA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E764434A-3388-4CF2-97A6-CD530D0B5DA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E764434A-3388-4CF2-97A6-CD530D0B5DA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33692357-5346-4FF0-9E64-F5DF823A0CE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33692357-5346-4FF0-9E64-F5DF823A0CE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33692357-5346-4FF0-9E64-F5DF823A0CE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33692357-5346-4FF0-9E64-F5DF823A0CE8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,18 @@
+﻿<configuration>
+    <system.serviceModel>
+        <bindings>
+            <customBinding>
+                <binding name="CustomBinding_LoginUserCarbonCalculatorService">
+                    <binaryMessageEncoding />
+                    <httpTransport maxReceivedMessageSize="2147483647" maxBufferSize="2147483647" />
+                </binding>
+            </customBinding>
+        </bindings>
+        <client>
+            <endpoint address="http://localhost:5971/LoginUserCarbonCalculatorService.svc"
+                binding="customBinding" bindingConfiguration="CustomBinding_LoginUserCarbonCalculatorService"
+                contract="LoginUserCarbonCalculatorServiceRef.LoginUserCarbonCalculatorService"
+                name="CustomBinding_LoginUserCarbonCalculatorService" />
+        </client>
+    </system.serviceModel>
+</configuration>

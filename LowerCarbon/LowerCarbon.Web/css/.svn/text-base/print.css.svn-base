@@ -1,0 +1,15 @@
+#slideshowprev, #slideshownext, #breadcrumb, #menu, .actions, .share, #footer, #header, #bottom, .skip, #submenu {
+	display: none;
+}
+
+.answer {
+	display: block !important;
+}
+
+* {
+	font-family: "Lucida Sans", "Verdana", "sans-serif";
+}
+
+.print2, .print3, .print4, .print5, .print6, .print7, .print8 {
+	display: none;
+}

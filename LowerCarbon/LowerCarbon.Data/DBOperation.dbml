@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="ImagineCup" Class="ImagineCupDBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=172.29.132.248;Initial Catalog=ImagineCup;Persist Security Info=True;User ID=sa" SettingsObjectName="ImagineCupDB.Properties.Settings" SettingsPropertyName="ImagineCupConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.AVG_CAR_FOO_OF_STATE" Member="AVG_CAR_FOO_OF_STATE">
+    <Type Name="AVG_CAR_FOO_OF_STATE">
+      <Column Name="STATE_NAME" Type="System.String" DbType="NVarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="AVG_CAR_FOO" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Column Name="DATA_ACQ_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CARBON_FOO_CONF" Member="CARBON_FOO_CONF">
+    <Type Name="CARBON_FOO_CONF">
+      <Column Name="CONF_NO" Type="System.String" DbType="Char(32) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="AVG_OF_IND_COUNTRIES" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Column Name="GLO_AVG_CAR_FOO" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Column Name="GLOBAL_GOAL" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Column Name="LOVE_TREE_STANDARD" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CARBON_FOOTPRINT" Member="CARBON_FOOTPRINT">
+    <Type Name="CARBON_FOOTPRINT">
+      <Column Name="CARBON_FOOTPRINT_NO" Type="System.String" DbType="Char(32) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CONSUMER_NO" Type="System.String" DbType="Char(32) NOT NULL" CanBeNull="false" />
+      <Column Name="STATE" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="BEGIN_TIME" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="END_TIME" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="HOUSEHOLD" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="POWER" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Column Name="NATURAL_GAS" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Column Name="HEATING_FUEL" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Column Name="COAL" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Column Name="LPG" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Column Name="PROPANE" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Column Name="WOOD_LATH" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Column Name="FLIGHTS_FROM" Type="System.String" DbType="Char(10)" CanBeNull="true" />
+      <Column Name="FLIGHTS_TO" Type="System.String" DbType="Char(10)" CanBeNull="true" />
+      <Column Name="VIA" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="SHIPPING_SPACE_TYPE" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="TRAVEL_COUNT" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="INC_RADIATION_ENERGY" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="CAR_MILEAGE" Type="System.String" DbType="Char(10)" CanBeNull="true" />
+      <Column Name="MANUFACTURER" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="MODEL" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="PRODUCTION_YEAR" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CAR_EFFECT" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Column Name="MOTO_MILEAGE" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Column Name="MOTO_EFFECT" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Column Name="BUS" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Column Name="COACH" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Column Name="NATIONAL_RAIL" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Column Name="INTERNATIONAL_R" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Column Name="TRAM" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Column Name="METRO" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Column Name="TAXI" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Column Name="SEC_CARBON_FOO" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Column Name="TOTAL_CARBON_FOO" Type="System.Decimal" DbType="Decimal(10,2) NOT NULL" CanBeNull="false" />
+      <Column Name="CALCULATION_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="CONSUMER_CARBON_FOOTPRINT" Member="CONSUMER" ThisKey="CONSUMER_NO" OtherKey="CONSUMER_NO" Type="CONSUMER" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CONSUMER_BIND_ESHOP" Member="CONSUMER_BIND_ESHOP">
+    <Type Name="CONSUMER_BIND_ESHOP">
+      <Column Name="CONSUMER_BIND_NO" Type="System.String" DbType="Char(32) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CONSUMER_NO" Type="System.String" DbType="Char(32) NOT NULL" CanBeNull="false" />
+      <Column Name="ESHOP_N0" Type="System.String" DbType="Char(32) NOT NULL" CanBeNull="false" />
+      <Column Name="CONSUMER_BIND_NAME" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="CONSUMER_BIND_PASSWD" Type="System.String" DbType="Char(32) NOT NULL" CanBeNull="false" />
+      <Association Name="E_SHOP_CONSUMER_BIND_ESHOP" Member="E_SHOP" ThisKey="ESHOP_N0" OtherKey="ESHOP_NO" Type="E_SHOP" IsForeignKey="true" />
+      <Association Name="CONSUMER_CONSUMER_BIND_ESHOP" Member="CONSUMER" ThisKey="CONSUMER_NO" OtherKey="CONSUMER_NO" Type="CONSUMER" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.E_SHOP" Member="E_SHOP">
+    <Type Name="E_SHOP">
+      <Column Name="ESHOP_NO" Type="System.String" DbType="Char(32) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ESHOP_NAME" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="ESHOP_HOME" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Association Name="E_SHOP_CONSUMER_BIND_ESHOP" Member="CONSUMER_BIND_ESHOP" ThisKey="ESHOP_NO" OtherKey="ESHOP_N0" Type="CONSUMER_BIND_ESHOP" />
+      <Association Name="E_SHOP_VENDOR_BIND_ESHOP_" Member="VENDOR_BIND_ESHOP_" ThisKey="ESHOP_NO" OtherKey="ESHOP_NO" Type="VENDOR_BIND_ESHOP_" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LOVE_TREE" Member="LOVE_TREE">
+    <Type Name="LOVE_TREE">
+      <Column Name="TREE_NO" Type="System.String" DbType="Char(32) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CONSUMER_NO" Type="System.String" DbType="Char(32) NOT NULL" CanBeNull="false" />
+      <Column Name="TREE_SLOGAN" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="TREE_PIC" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="TREE_LOCATION" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="TREE_AGE" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="TREE_STATE" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="TREE_PURCHASES_TIME" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TREE_PLANT_TIME" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="CONSUMER_LOVE_TREE" Member="CONSUMER" ThisKey="CONSUMER_NO" OtherKey="CONSUMER_NO" Type="CONSUMER" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PLATFORM_LOG" Member="PLATFORM_LOG">
+    <Type Name="PLATFORM_LOG">
+      <Column Name="PLATFORM_LOG_NO" Type="System.String" DbType="Char(32) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="GOODS_NO" Type="System.String" DbType="Char(32) NOT NULL" CanBeNull="false" />
+      <Column Name="NATURAL_MONTHS" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="AMOUNTS_PAYABLE" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Column Name="ACTUALLY_PAID" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Column Name="LOG_STATE" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Association Name="GOODS_PLATFORM_LOG" Member="GOODS" ThisKey="GOODS_NO" OtherKey="GOODS_NO" Type="GOODS" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CONSUMER" Member="CONSUMER">
+    <Type Name="CONSUMER">
+      <Column Name="CONSUMER_NO" Type="System.String" DbType="Char(32) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CONSUMER_NAME" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="CONSUMER_PASSWD" Type="System.String" DbType="Char(32) NOT NULL" CanBeNull="false" />
+      <Column Name="C_HEAD_PORTRAIT" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="CONSUMER_MAIL_BOX" Type="System.String" DbType="Char(32)" CanBeNull="true" />
+      <Column Name="CONSUMER_SEX" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="CONSUMER_POINTS" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="REGISTER_TIME" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="CONSUMER_CARBON_FOOTPRINT" Member="CARBON_FOOTPRINT" ThisKey="CONSUMER_NO" OtherKey="CONSUMER_NO" Type="CARBON_FOOTPRINT" />
+      <Association Name="CONSUMER_CONSUMER_BIND_ESHOP" Member="CONSUMER_BIND_ESHOP" ThisKey="CONSUMER_NO" OtherKey="CONSUMER_NO" Type="CONSUMER_BIND_ESHOP" />
+      <Association Name="CONSUMER_LOVE_TREE" Member="LOVE_TREE" ThisKey="CONSUMER_NO" OtherKey="CONSUMER_NO" Type="LOVE_TREE" />
+      <Association Name="CONSUMER_PURCHASES_HISTORY" Member="PURCHASES_HISTORY" ThisKey="CONSUMER_NO" OtherKey="CONSUMER_NO" Type="PURCHASES_HISTORY" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PURCHASES_HISTORY" Member="PURCHASES_HISTORY">
+    <Type Name="PURCHASES_HISTORY">
+      <Column Name="HISTORY_NO" Type="System.String" DbType="Char(32) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="BUSINESS_NO" Type="System.String" DbType="Char(32) NOT NULL" CanBeNull="false" />
+      <Column Name="CONSUMER_NO" Type="System.String" DbType="Char(32) NOT NULL" CanBeNull="false" />
+      <Column Name="GOODS_NO" Type="System.String" DbType="Char(32) NOT NULL" CanBeNull="false" />
+      <Column Name="CONSUMPTION" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="CONSUMER_TIME" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="TRANSACTIONS_STATE" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="LAST_TRACKING" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CARBON_FO_STATE" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Association Name="CONSUMER_PURCHASES_HISTORY" Member="CONSUMER" ThisKey="CONSUMER_NO" OtherKey="CONSUMER_NO" Type="CONSUMER" IsForeignKey="true" />
+      <Association Name="GOODS_PURCHASES_HISTORY" Member="GOODS" ThisKey="GOODS_NO" OtherKey="GOODS_NO" Type="GOODS" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.GOODS" Member="GOODS">
+    <Type Name="GOODS">
+      <Column Name="GOODS_NO" Type="System.String" DbType="Char(32) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="EXT_NO" Type="System.String" DbType="Char(32)" CanBeNull="true" />
+      <Column Name="VENDOR_BIND_NO" Type="System.String" DbType="Char(32) NOT NULL" CanBeNull="false" />
+      <Column Name="CARBON_EMISSIONS" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="GOODS_REGISTER_TIME" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="COOPERATION_STATE" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="CARBON_DISCOUNT" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Association Name="GOODS_PLATFORM_LOG" Member="PLATFORM_LOG" ThisKey="GOODS_NO" OtherKey="GOODS_NO" Type="PLATFORM_LOG" />
+      <Association Name="GOODS_PURCHASES_HISTORY" Member="PURCHASES_HISTORY" ThisKey="GOODS_NO" OtherKey="GOODS_NO" Type="PURCHASES_HISTORY" />
+      <Association Name="VENDOR_BIND_ESHOP__GOODS" Member="VENDOR_BIND_ESHOP_" ThisKey="VENDOR_BIND_NO" OtherKey="VENDOR_BIND_NO" Type="VENDOR_BIND_ESHOP_" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.VENDOR" Member="VENDOR">
+    <Type Name="VENDOR">
+      <Column Name="VENDOR_NO" Type="System.String" DbType="Char(32) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="VENDOR_NAME" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="VENDOR_PASSWD" Type="System.String" DbType="Char(32) NOT NULL" CanBeNull="false" />
+      <Column Name="V_HEAD_PORTRAIT" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="VENDOR_MAIL_BOX" Type="System.String" DbType="Char(32)" CanBeNull="true" />
+      <Column Name="VENDOR_STATE" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="REGISTER_TIME" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="VENDOR_VENDOR_BIND_ESHOP_" Member="VENDOR_BIND_ESHOP_" ThisKey="VENDOR_NO" OtherKey="VENDOR_NO_" Type="VENDOR_BIND_ESHOP_" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[VENDOR_BIND_ESHOP ]" Member="VENDOR_BIND_ESHOP_">
+    <Type Name="VENDOR_BIND_ESHOP_">
+      <Column Name="VENDOR_BIND_NO" Type="System.String" DbType="Char(32) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="[VENDOR_NO ]" Member="VENDOR_NO_" Type="System.String" DbType="Char(32) NOT NULL" CanBeNull="false" />
+      <Column Name="ESHOP_NO" Type="System.String" DbType="Char(32) NOT NULL" CanBeNull="false" />
+      <Column Name="VENDOR_BIND_NAME" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="VENDOR_BIND_PASSWD" Type="System.String" DbType="Char(32) NOT NULL" CanBeNull="false" />
+      <Column Name="VENDOR_BIND_HOME" Type="System.String" DbType="Char(100)" CanBeNull="true" />
+      <Column Name="BIND_STATE" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="BIND_TIME" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="VENDOR_BIND_ESHOP__GOODS" Member="GOODS" ThisKey="VENDOR_BIND_NO" OtherKey="VENDOR_BIND_NO" Type="GOODS" />
+      <Association Name="VENDOR_VENDOR_BIND_ESHOP_" Member="VENDOR" ThisKey="VENDOR_NO_" OtherKey="VENDOR_NO" Type="VENDOR" IsForeignKey="true" />
+      <Association Name="E_SHOP_VENDOR_BIND_ESHOP_" Member="E_SHOP" ThisKey="ESHOP_NO" OtherKey="ESHOP_NO" Type="E_SHOP" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.SaveLoginUserCarbonResult" Method="SaveLoginUserCarbonResult">
+    <Parameter Name="username" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="total" Type="System.Int64" DbType="BigInt" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.IsValidateUserName" Method="IsValidateUserName">
+    <Parameter Name="username" Type="System.String" DbType="NVarChar(20)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.RegisterUser" Method="RegisterUser">
+    <Parameter Name="no" Type="System.String" DbType="Char(32)" />
+    <Parameter Name="username" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="password" Type="System.String" DbType="Char(32)" />
+    <Parameter Name="mail" Type="System.String" DbType="VarChar(32)" />
+    <Parameter Name="time" Type="System.DateTime" DbType="DateTime" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

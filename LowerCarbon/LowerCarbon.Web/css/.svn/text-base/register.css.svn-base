@@ -1,0 +1,99 @@
+html { color: rgb(0, 0, 0); font-family: Arial,Helvetica,sans-serif; font-size: 12px; }
+body, div, label, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, p, blockquote, th, td { margin: 0pt; padding: 0pt; border: 0pt none; outline: 0pt none; }
+input, textarea { margin: 0pt; padding: 0pt; font-size: 12px; font-family: Arial,Helvetica,sans-serif; outline: medium none; color: rgb(51, 51, 51); }
+fieldset, img { border: 0pt none; }
+li { list-style: none outside none; }
+input.labelbox { border: 0pt none; }
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+strong, h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+input { line-height: 1.2em; overflow: hidden; }
+input, textarea, select {  }
+.clear, .clearit { clear: both; padding: 0pt; margin: 0pt; }
+body { color: rgb(51, 51, 51); }
+body { background-color: rgb(221, 243, 247); }
+.lf { float: left; }
+.rt { float: right; }
+textarea, input { color: rgb(153, 153, 153); }
+a, a:link, a:visited { color: rgb(0, 130, 203);
+    right: 620px;
+}
+a:hover { color: rgb(51, 153, 0); }
+.MIB_linedot1 { background-image: url('../images/linedot1.gif'); background-repeat: repeat-x; height: 1px; overflow: hidden; clear: both; }
+input, textarea { border-color: rgb(196, 199, 189) rgb(239, 239, 239) rgb(242, 242, 242) rgb(210, 213, 202); border-style: solid; border-width: 1px; color: rgb(51, 51, 51); padding: 3px 2px 1px; }
+.MIB_foot_new { padding: 0pt 20px 0pt 0pt; }
+.MIB_foot_new .rt { text-align: right; }
+.MIB_foot_new p { padding-bottom: 5px; }
+.MIB_foot_new .p1 a { margin-right: 11px; }
+#sinaNote { position: absolute; z-index: 999999; width: auto; overflow: hidden; padding: 0pt; margin: 0pt; border: 1px solid rgb(204, 204, 204); background: none repeat scroll 0% 0% rgb(255, 255, 255); text-align: left; }
+body { background: url('../images/guidebg.jpg') no-repeat scroll center top rgb(158, 223, 232); }
+.cloud { width: 345px; height: 171px; position: absolute; right: 0pt; top: 0pt;  z-index: 2; }
+.guidelink { width: 170px; height: 70px; display: block; position: absolute; top: 80px; left: 20px; }
+.MIB_guide { background: url('../images/guidembg_714beta.gif') no-repeat scroll center top transparent; min-height: 600px; width: 810px; padding-top: 174px; margin: 0pt auto; clear: both; height: 41px; 
+position: relative; z-index: 3;
+    top: -16px;
+    left: -2px;
+}
+.MIB_guideb { background: url('../images/gbodybg.png') repeat-y scroll center center transparent; width: 800px; padding: 0pt 5px; }
+.MIB_guide_t { position: absolute; top: 140px; right: 20px; z-index: 100; background: url('../images/dash_line.png') repeat-x scroll center bottom transparent; line-height: 30px; color: rgb(153, 153, 153); height: 30px; padding-bottom: 6px; }
+.MIB_guide_bt { width: 810px; background: url('../images/footbt.png') no-repeat scroll center bottom transparent; padding-bottom: 10px; }
+.MIB_guide_btb { width: 800px; padding: 10px 5px 0pt; background: url('../images/ftbg.png') repeat-y scroll 0% 0% transparent; }
+.MIB_guide_btb .MIB_foot_new { padding-left: 20px; overflow: hidden; }
+.MIB_guide_btb .MIB_foot_new a { color: rgb(110, 175, 213); }
+.stepbg2 { background: url('../images/btbg.png') no-repeat scroll left bottom transparent; padding-bottom: 40px; overflow: hidden; min-height: 270px; }
+.toptip1 { background: url('../images/toptip1.png') no-repeat scroll 0pt bottom transparent; font-size: 14px; height: 3px; 
+line-height: 60px; margin: 0pt auto 20px; padding-top: 20px; width: 740px; }
+.toptip1 p { color: rgb(38, 121, 187); padding-left: 20px; }
+.stepbg2 .jh_yanzheng, .stepbg2 .jh_yanzhenghover, .stepbg .jh_yanzheng, .stepbg .jh_yanzhenghover { background: url('../images/textbg.png') no-repeat scroll left -41px transparent; padding-left: 5px; float: left; }
+.stepbg2 .jh_yanzheng strong, .stepbg .jh_yanzheng strong, .stepbg2 .jh_yanzhenghover strong, .stepbg .jh_yanzhenghover strong { background: url('../images/textbg.png') no-repeat scroll right -41px transparent; padding: 3px 5px 3px 3px; height: 35px; float: left; }
+.stepbg2 .jh_yanzheng .textinp, .stepbg .jh_yanzheng .textinp, .stepbg2 .jh_yanzhenghover .textinp, .stepbg .jh_yanzhenghover .textinp { border: medium none; font-size: 14px; color: rgb(0, 0, 0); margin: 2px 0pt 0pt; height: 27px; line-height: 26px; background: none repeat scroll 0% 0% rgb(255, 255, 255); width: 91px; }
+.errormt { background: url('../images/erbg.png') no-repeat scroll left center transparent; height: 35px; line-height: 35px; color: rgb(204, 0, 0); padding-left: 10px; float: left; position: absolute; top: 3px; left: 330px; }
+.errormt strong { background: url('../images/erbg.png') no-repeat scroll right center transparent; float: left; height: 35px; padding-right: 10px; }
+.errormt strong span { padding-left: 20px; background: url('../images/no.png') no-repeat scroll left center transparent; float: left; white-space: nowrap; }
+.btdiv { padding: 30px 0pt 0pt; }
+.btdiv .btn_ljzc { background: url('../images/btn_ljzc.gif') no-repeat scroll 0% 0% transparent; width: 209px; height: 62px; display: block; margin: 0pt auto; }
+.btdiv .btn_ljzc:hover { background-position: 0pt -62px; }
+.MIB_guide_t { line-height: 30px; padding-bottom: 4px; }
+.stepbg2 .padding_less { padding: 0pt 0pt 40px; }
+.new_construct { margin-left: 40px; position: relative;
+    top: 0px;
+    left: 0px;
+    height: 312px;
+    width: 572px;
+}
+.new_construct .new_item { height: 50px; overflow: hidden; }
+.new_construct .new_item .tit { font-size: 14px; color: rgb(92, 155, 204); width: 186px; line-height: 41px; height: 31px; 
+float: left; text-align: right; }
+.new_construct .new_item .bdmain { float: left; padding-left: 6px; width: 280px; }
+.new_construct .new_item .bdmain input { font-size: 18px; }
+.new_construct .new_item .bdmain .lf { line-height: 48px; }
+.new_construct .new_item .bdmain .labelbox { vertical-align: middle; margin: 0pt 3px; }
+.new_construct .new_item .bdmain .plus_mailname, .new_construct .new_item .bdmain .mention, .new_construct .new_item .bdmain .jh_yanzheng { margin: 0pt; }
+.new_construct .new_item .bdmain .jh_yanzheng, .new_construct .new_item .new_plus { float: left; }
+.new_construct .new_item .new_plus .errormt { position: static; margin-top: 3px; }
+.new_construct .new_item .new_plus .plus_a { line-height: 48px; }
+.new_plus .mentip { width: 189px; margin-top: 4px; line-height: 18px; }
+.new_plus .mentip .maincent { color: rgb(104, 104, 104); border-width: 0pt 1px; border-color: rgb(236, 236, 213); border-style: solid; background: none repeat scroll 0% 0% rgb(255, 252, 235); padding: 6px 8px 7px; }
+.new_plus .mentip .tpbg, .new_plus .mentip .btbg { width: 189px; height: 5px; background: url('../images/mentip.png') no-repeat scroll center top transparent; font-size: 0pt; }
+.new_plus .mentip .btbg { background-position: center bottom; }
+.make_login .login_left { float: left; width: 610px; 
+border-right: 1px solid rgb(236, 236, 236); height: 483px; }
+.make_login .new_construct .new_item .tit { width: 153px; }
+.make_login .new_construct .new_item .bdmain { width: 250px; white-space: nowrap; }
+.make_login .btdiv { text-align: left; padding-left: 100px; padding-top: 10px; }
+.make_login .btdiv .btn_ljzc { margin: 0pt; }
+.make_login .jh_yanzheng .textinp, .make_login .jh_yanzhenghover .textinp { width: 70px; }
+.make_login .login_right { float: left; width: 134px; 
+padding-left: 20px; }
+.make_login .login_right .r_tit { color: rgb(102, 102, 102); line-height: 18px; }
+.make_login .login_right a.r_loginbtn { display: block; width: 97px; margin-top: 10px; height: 30px; background: url('../images/rbtn.gif') no-repeat scroll 0% 0% transparent; line-height: 30px; text-align: center; color: rgb(51, 51, 51); font-size: 14px; margin-left: 20px; }
+.make_login .login_right a.r_loginbtn:hover { text-decoration: none; color: rgb(51, 51, 51); }
+.make_login .login_right .MIB_linedot1 { margin: 30px auto; }
+.r_logoList { margin-top: 10px; }
+.r_logoList li { margin: 0pt auto 10px; text-align: center; width: 120px; height: 35px; background: url('../images/rloginbtn.gif') no-repeat scroll 0% 0% transparent; }
+.r_logoList a { display: block; width: 120px; margin: 0pt auto; height: 35px; background: url('../images/rloginbtn.gif') no-repeat scroll 0% 0% transparent; }
+.r_logoList .sinaBlog a { background-position: 0pt 0pt; }
+.r_logoList .sinaMail a { background-position: 0pt -35px; }
+.r_logoList .sinaBlog, .r_logoList .sinaBlog a:hover { background-position: 0pt -140px; }
+.r_logoList .sinaMail, .r_logoList .sinaMail a:hover { background-position: 0pt -175px; }
+.passCard { border: 1px solid rgb(221, 221, 221); width: 239px; position: absolute; z-index: 3; background-color: rgb(255, 255, 255); top: 37px; left: 108px; line-height: 28px; font-size: 14px; }

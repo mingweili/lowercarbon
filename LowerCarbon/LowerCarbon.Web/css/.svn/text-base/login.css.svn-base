@@ -1,0 +1,48 @@
+﻿.tangram-dialog-main {
+    background: none repeat scroll 0 0 #999999;
+    }
+    .tangram-dialog {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 2px solid #60A506;
+    left: -4px;
+    padding: 10px 15px;
+    position: relative;
+    top: -4px;
+    }
+    .tangram-dialog-title {
+    border-bottom: 2px solid #3DAA11;
+    cursor: move;
+    font-family: "微软雅黑","黑体",Arial;
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+    position: relative;
+    }
+    .tangram-dialog-footer {
+    overflow: hidden;
+    }
+#mask
+{
+	position: absolute;
+	z-index: 2;
+	top: 0px;
+	left: 0px;
+	right: 0;
+	bottom: 0;
+	background-color: #999999;
+	filter: alpha(opacity=50);
+	-moz-opacity: 0.50;
+	opacity: 0.50;
+	z-index: 6;
+}
+.tangram-dialog-close {
+    background: url("http://img.baidu.com/img/iknow/qb/bg.png") repeat scroll -114px -131px transparent;
+    cursor: pointer;
+    height: 20px;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 20px;
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="d144ff97-6ca4-45df-921c-9d44c5946e26" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:5971/LoginUserCarbonCalculatorService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="LoginUserCarbonCalculatorService.wsdl" MetadataType="Wsdl" ID="12041642-dc26-4bd6-bf00-199ef1225f27" SourceId="1" SourceUrl="http://localhost:5971/LoginUserCarbonCalculatorService.svc?wsdl" />
+    <MetadataFile FileName="LoginUserCarbonCalculatorService.xsd" MetadataType="Schema" ID="dfcef375-676c-4f84-a080-e99a56e1dd2d" SourceId="1" SourceUrl="http://localhost:5971/LoginUserCarbonCalculatorService.svc?xsd=xsd0" />
+    <MetadataFile FileName="LoginUserCarbonCalculatorService.disco" MetadataType="Disco" ID="f1557555-2469-4da0-8f02-e2ec4bdb71ea" SourceId="1" SourceUrl="http://localhost:5971/LoginUserCarbonCalculatorService.svc?disco" />
+    <MetadataFile FileName="LoginUserCarbonCalculatorService1.wsdl" MetadataType="Wsdl" ID="f6b1d380-9492-407a-85d6-ad16868e89f3" SourceId="1" SourceUrl="http://localhost:5971/LoginUserCarbonCalculatorService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="LoginUserCarbonCalculatorService1.xsd" MetadataType="Schema" ID="d53d5aa0-0b6b-47db-9e90-1f2586fb7ff1" SourceId="1" SourceUrl="http://localhost:5971/LoginUserCarbonCalculatorService.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="3a45c848-81a6-4b8a-b4a0-5a7dc3237d5f" name="UseCase" linkedPackageId="5a683d08-65bf-423a-9256-e6db1186ed0b" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="314b7942-ab6d-4fba-82a1-c490e7c020a1">
+      <elementDefinition Id="c3af148a-cce8-40e7-a157-218ef7ca3734" />
+      <body>购买碳排放量：购买树苗，然后交由第三方环保组织执行。</body>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="c3c94402-7f3c-4745-9f1a-871b9584ee90" name="买家" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a206b0ef-d5f5-41c8-a797-64a8e09ee5a2" />
+        <targetEnds>
+          <association Id="b223bd7d-9682-4575-8817-657213da978f" isDerived="false" sourceEndRoleName="买家" targetEndRoleName="UseCase1" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="dc66659a-2c04-4a31-8359-365dac4b43dc" LastKnownName=" 买家注册" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="122ed50b-9da3-4b40-a62a-dfc89bee0624" name="买家" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="80b09067-2bbe-49e9-bae8-3239e66d0f34" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8fb60acc-41dd-4574-bb66-6deb533eb787" name="UseCase1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a09f7d1e-0548-47ea-a90e-135a4563a77e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2854ab68-47c9-4c28-bddc-add65f165e32" />
+          </association>
+          <association Id="3682afab-934e-4691-8adc-5239ea9cc4bd" isDerived="false" sourceEndRoleName="买家" targetEndRoleName="UseCase1" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="c642b669-290b-4339-8634-d41c979603fe" LastKnownName="计算碳排放量" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f9b9ba4a-a8e9-442c-82cd-aabd187f47e6" name="买家" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="15324bc2-c950-4928-b90e-0ee0d674b482" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5d38c8f4-7387-4cc4-a8b0-f29c53d1a7d7" name="UseCase1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="61a4d35a-b91f-4089-8098-7534b62979fe" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a6687fa8-7721-4873-a568-01ed3623fb63" />
+          </association>
+          <association Id="5346f4bf-851f-4279-8eb4-8e4c81cd47ad" isDerived="false" sourceEndRoleName="买家" targetEndRoleName="UseCase2" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="32db1c53-1422-40fe-ae75-6cbb193bdfad" LastKnownName="基本信息设置修改" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d7f85f14-feca-490c-b5e9-7c92f486e899" name="买家" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="06683437-3092-405b-80a9-02d307f40c7b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d000d47b-92b0-4e32-8d0e-1f9601127e2a" name="UseCase2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7548812a-5403-4397-8203-3e2d9e10efc9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="08ac9678-0d8b-4266-83d4-88e3dcfa9ca1" />
+          </association>
+          <association Id="cf63a27a-fd68-49e1-97c9-cb67d1b77ee5" isDerived="false" sourceEndRoleName="买家" targetEndRoleName="购买商品" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="29f8bc72-31cf-40ff-979b-dbb20680b16b" LastKnownName="查看商品列表，到对应购物网站呢购买" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ee257593-5208-4afc-9abc-ea52bbca4e3f" name="买家" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="505bd04e-6e44-4c88-a469-ce60cff25939" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bd16b287-69dd-46c1-b96b-034a8577c8bb" name="购买商品" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="add395b8-7405-46f4-8203-cf85d47a8db1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="908cb38f-ec96-4799-abed-d2373c9c59a7" />
+          </association>
+          <association Id="01c42727-d799-40f3-bfee-4d2fb1533acb" isDerived="false" sourceEndRoleName="买家" targetEndRoleName="买家" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="c3c94402-7f3c-4745-9f1a-871b9584ee90" LastKnownName="买家" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b81c1d9c-2393-4af2-a823-2045f4087961" name="买家" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f3ac7789-40d2-44a6-88b3-be03007235b6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="66a63b6c-0e5f-4118-a25d-be929d18e8fb" name="买家" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="01e9c0f5-2236-4c63-b7c1-71c3faf4c081" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="360d6cd0-e8f3-482b-8679-f287cac943d8" />
+          </association>
+          <association Id="1efe2d6b-1924-470d-af4d-585dfa8ee46e" isDerived="false" sourceEndRoleName="买家" targetEndRoleName="追踪碳足迹" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="5692c462-d194-4b0e-ae4a-8ac0d39a6ed8" LastKnownName="追踪碳足迹" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="392d6f69-e7b0-4fa2-be49-1fab787ef5f9" name="买家" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="eab94fc0-86bc-44a1-a1e0-b0b02494cbee" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="78b8e298-09b4-4852-b5a3-cfb39666243b" name="追踪碳足迹" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="113f59c6-b25d-4f10-b116-acead5c473e2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="380952b7-dda2-4a98-9285-c071e2f82226" />
+          </association>
+          <association Id="a6ea4736-6639-4bb0-8a2a-5b6973582836" isDerived="false" sourceEndRoleName="买家" targetEndRoleName="追踪交易记录" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="39332766-9f52-4815-b599-2d579ce7304e" LastKnownName="追踪交易记录" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="559aa595-058f-4e9f-972b-058fc11ac2f5" name="买家" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="283bf886-186d-45fa-a383-fac1cd8b6332" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="30825615-209d-4f0b-a2c8-b921cd504668" name="追踪交易记录" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b1b6df76-26c2-44eb-8fde-c19ed4387cef" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="74c5f89e-19e1-4c2a-9840-95d4068b1357" />
+          </association>
+          <association Id="01a3d378-da48-416c-a7ec-0eb522cc7bb9" isDerived="false" sourceEndRoleName="买家" targetEndRoleName="查看个人积分，反馈信息" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="8e53fc22-65c7-4bb6-8a45-e8daac07cf38" LastKnownName="查看个人积分，反馈信息" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="63c3a054-8c4b-4e29-b505-875bf5dba147" name="买家" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9326244d-8647-49e9-8147-1e47732da8b0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4bb137b6-02bf-4075-9451-904046384a98" name="查看个人积分，反馈信息" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1833ff24-0b6d-49b8-a4da-aa4a978110c8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ae1dd8aa-e1ab-40d9-974b-790461b01049" />
+          </association>
+          <association Id="b60f61c4-44a7-4371-ae6d-1cf09a4f4393" isDerived="false" sourceEndRoleName="买家" targetEndRoleName="购买碳排放量" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="76a1fa9d-c7ca-4387-b75e-5285a338dce9" LastKnownName="购买碳排放量" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9974b389-994b-4eb6-b4f2-def62e404d92" name="买家" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b1b4c234-d01c-4168-a3db-25cfe3dcccc3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="66d3f41e-4915-4e89-87b1-3560025f3ae8" name="购买碳排放量" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="405abc2f-befd-4447-a36c-96338dddaf50" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="714a9ee2-e17e-495f-876c-927babf1ca3f" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="0e294bdc-1921-4853-9244-cd995801c91a" name="XXX系统" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="79ca642d-d7d6-4a4c-9fc3-aa99a2774b44" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="dc66659a-2c04-4a31-8359-365dac4b43dc" name=" 买家注册" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="224115c2-070a-4fea-965b-41d45db880a1" />
+        <subjects>
+          <subsystemMoniker Id="0e294bdc-1921-4853-9244-cd995801c91a" LastKnownName="XXX系统" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="c642b669-290b-4339-8634-d41c979603fe" name="计算碳排放量" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="10ba13cf-c691-4407-ae23-9595782b064f" />
+        <subjects>
+          <subsystemMoniker Id="0e294bdc-1921-4853-9244-cd995801c91a" LastKnownName="XXX系统" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="32db1c53-1422-40fe-ae75-6cbb193bdfad" name="基本信息设置修改" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f8b0be75-65cd-436f-9b52-21b2d22285cf" />
+        <subjects>
+          <subsystemMoniker Id="0e294bdc-1921-4853-9244-cd995801c91a" LastKnownName="XXX系统" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="29f8bc72-31cf-40ff-979b-dbb20680b16b" name="查看商品列表，到对应购物网站呢购买" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="eb5aa6e1-b95f-46d8-a29d-b97918d1cd8c" />
+        <subjects>
+          <subsystemMoniker Id="0e294bdc-1921-4853-9244-cd995801c91a" LastKnownName="XXX系统" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="5692c462-d194-4b0e-ae4a-8ac0d39a6ed8" name="追踪碳足迹" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f7f4e311-71c5-45fc-86cc-23f507a90654" />
+        <subjects>
+          <subsystemMoniker Id="0e294bdc-1921-4853-9244-cd995801c91a" LastKnownName="XXX系统" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="39332766-9f52-4815-b599-2d579ce7304e" name="追踪交易记录" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0b7035c4-4aa2-499e-a4d9-40446e8054fe" />
+        <subjects>
+          <subsystemMoniker Id="0e294bdc-1921-4853-9244-cd995801c91a" LastKnownName="XXX系统" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="8e53fc22-65c7-4bb6-8a45-e8daac07cf38" name="查看个人积分，反馈信息" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e4ed8c47-bac3-4500-9a62-ca72feef22ec" />
+        <subjects>
+          <subsystemMoniker Id="0e294bdc-1921-4853-9244-cd995801c91a" LastKnownName="XXX系统" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="76a1fa9d-c7ca-4387-b75e-5285a338dce9" name="购买碳排放量" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d750b96d-303a-434d-8904-2f5dbaf2b6a6" />
+        <subjects>
+          <subsystemMoniker Id="0e294bdc-1921-4853-9244-cd995801c91a" LastKnownName="XXX系统" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="5a683d08-65bf-423a-9256-e6db1186ed0b" name="LowerCarbonModeling">
+    <elementDefinition Id="a7bd6c6a-396f-4803-ad77-e20d8b797b3c" />
+    <profileInstances>
+      <packageHasProfileInstances Id="b7daabf6-85ad-440d-92df-4537163cb5de">
+        <profileInstance Id="faee36c7-0b4f-42c7-abec-f51e90789f9a" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="e5449c8c-36b7-4e9e-ad1f-d45c3a57205c">
+        <profileInstance Id="96123d07-bd1a-4668-84b5-109148146f39" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="游客UseCase">
+  <useCaseModelRootMoniker Id="c30db2de-631d-49df-b066-a0b243cfc02f" />
+  <nestedChildShapes>
+    <actorShape Id="7a1aba2e-4110-44b9-84d9-46bf9ea41470" absoluteBounds="0.75, 2.125, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="34e598e4-ae42-4c6b-aadb-53eb35b2c28e" LastKnownName="游客" />
+      <relativeChildShapes />
+    </actorShape>
+    <SubsystemShape Id="ff044a82-71c8-4b5a-b1ba-f1c41c89db7f" absoluteBounds="1.75, 1, 2, 3.125" customColor="White">
+      <subsystemMoniker Id="4551ea7c-834f-4b87-8298-4c65ee1fdecd" LastKnownName="XXX系统" />
+      <nestedChildShapes>
+        <useCaseShape Id="a15dfaf1-6fce-4a52-95e7-f27cea4dd906" absoluteBounds="2.125, 1.5, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+          <useCaseMoniker Id="ed5b5e60-5ad5-4d34-835b-66016016fb10" LastKnownName="浏览查看商品列表" />
+          <relativeChildShapes />
+        </useCaseShape>
+        <useCaseShape Id="73309c50-a43c-40ad-8509-b94cc79050df" absoluteBounds="2.125, 2.25, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+          <useCaseMoniker Id="b594d287-35d4-4769-baa5-101e8515b2f2" LastKnownName="计算个人太排放量" />
+          <relativeChildShapes />
+        </useCaseShape>
+        <useCaseShape Id="b38ce52e-f39e-481a-ac07-beed1e0e8dcc" absoluteBounds="2.125, 3, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+          <useCaseMoniker Id="bded84a7-ef06-4f19-8695-a3bdc0397ba6" LastKnownName="购买碳排放量" />
+          <relativeChildShapes />
+        </useCaseShape>
+      </nestedChildShapes>
+    </SubsystemShape>
+    <useCaseAssociationConnector edgePoints="[(1.25 : 2.27884615384615); (2.2286880054477 : 1.90242769021242)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="5014d7cc-b6d4-4294-8c40-4650e7936ccb" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="7a1aba2e-4110-44b9-84d9-46bf9ea41470" />
+        <useCaseShapeMoniker Id="a15dfaf1-6fce-4a52-95e7-f27cea4dd906" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseAssociationConnector edgePoints="[(1.25 : 2.39423076923077); (2.13081415117469 : 2.46198570393651)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="37fd9a30-976a-4ab4-9ca3-dd777e595cfe" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="7a1aba2e-4110-44b9-84d9-46bf9ea41470" />
+        <useCaseShapeMoniker Id="73309c50-a43c-40ad-8509-b94cc79050df" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseAssociationConnector edgePoints="[(1.25 : 2.50961538461538); (2.28477445031636 : 3.06680162709343)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="cc7f2e90-2eed-440d-b698-d29ba5823142" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="7a1aba2e-4110-44b9-84d9-46bf9ea41470" />
+        <useCaseShapeMoniker Id="b38ce52e-f39e-481a-ac07-beed1e0e8dcc" />
+      </nodes>
+    </useCaseAssociationConnector>
+  </nestedChildShapes>
+</useCaseDiagram>
